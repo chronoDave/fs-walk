@@ -11,10 +11,10 @@ A tiny zero-depedency directory walker for [node.js](https://nodejs.org/en/).
 
 ```
 // Yarn
-yarn add leaf-db
+yarn add @chronocide/fs-walk
 
 // Npm
-npm i leaf-db
+npm i @chronocide/fs-walk
 ```
 
 ## Getting started
