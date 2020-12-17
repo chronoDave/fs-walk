@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 [![npm](https://img.shields.io/npm/v/@chronocide/fs-walk?label=npm)](https://www.npmjs.com/package/@chronocide/fs-walk)
 [![@chronocide/fs-walk](https://img.shields.io/bundlephobia/minzip/@chronocide/fs-walk@latest.svg)](https://bundlephobia.com/result?p=@chronocide/fs-walk@latest)
-![Lint & Test](https://github.com/chronoDave/fs-walk/workflows/Lint%20&%20Test/badge.svg?branch=main)
+![@chronocide/fs-walk](https://github.com/chronoDave/fs-walk/workflows/@chronocide/fs-walk/badge.svg?branch=main)
 
 A tiny zero-depedency directory walker for [node.js](https://nodejs.org/en/).
 
