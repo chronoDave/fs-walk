@@ -1,4 +1,4 @@
-# fs-walk
+# @chronocide/fs-walk
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 [![npm](https://img.shields.io/npm/v/@chronocide/fs-walk?label=npm)](https://www.npmjs.com/package/@chronocide/fs-walk)
