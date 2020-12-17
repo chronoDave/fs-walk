@@ -1,6 +1,7 @@
 # fs-walk
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
+![Lint & Test](https://github.com/chronoDave/fs-walk/workflows/Lint%20&%20Test/badge.svg?branch=main)
 
 A zero-depedency directory walker for [node.js](https://nodejs.org/en/).
 
