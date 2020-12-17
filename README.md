@@ -1,6 +1,6 @@
 # fs-walk
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 
 A zero-depedency directory walker for [node.js](https://nodejs.org/en/).
 
@@ -60,7 +60,7 @@ Done in 11.06s.
 
 ## License
 
-[GNU General Public License v3](./LICENSE).
+[MIT License](./LICENSE)
 
 ## Donating
 

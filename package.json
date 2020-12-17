@@ -17,7 +17,7 @@
   ],
   "repository": "https://github.com/chronoDave/fs-walk.git",
   "author": "Chronocide",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "engines": {
     "node": ">=10.12.0"
   },
