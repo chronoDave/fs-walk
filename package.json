@@ -1,6 +1,6 @@
 {
   "name": "@chronocide/fs-walk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A zero-depedency directory walker for node.js",
   "main": "dist/walk.js",
   "types": "dist/walk.d.ts",
