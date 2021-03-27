@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export default (dir: string) => {
+const walk = (dir: string) => {
   const getStack = (directory: string) => fs
     .readdirSync(directory)
     .map(entry => path.resolve(directory, entry));
@@ -21,3 +21,5 @@ export default (dir: string) => {
 
   return files;
 };
+
+export = walk;

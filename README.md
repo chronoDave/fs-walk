@@ -21,7 +21,7 @@ npm i @chronocide/fs-walk
 
 ```JS
 // ES5
-const walk = require('@chronocide/fs-walk').default;
+const walk = require('@chronocide/fs-walk');
 // ES6
 import walk from '@chronocide/fs-walk';
 
