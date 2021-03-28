@@ -3,7 +3,7 @@ import path from 'path';
 
 const walk = (root: string) => {
   const getStack = (dir: string) => fs.readdirSync(dir, { withFileTypes: true })
-    .map(dirEnt => ({ dir, dirEnt }));
+    .map(dirEnt => ({ dirPath: path.resolve(dir, dirEnt.name), dirEnt }));
 
   const stack = getStack(root);
   const files = [];
@@ -12,12 +12,12 @@ const walk = (root: string) => {
     const item = stack.pop();
 
     if (item) {
-      const { dir, dirEnt } = item;
+      const { dirPath, dirEnt } = item;
 
       if (dirEnt.isDirectory()) {
-        stack.push(...getStack(path.resolve(dir, dirEnt.name)));
+        stack.push(...getStack(dirPath));
       } else {
-        files.push(path.resolve(root, dirEnt.name));
+        files.push(dirPath);
       }
     }
   }

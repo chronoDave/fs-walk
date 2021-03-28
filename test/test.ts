@@ -18,3 +18,11 @@ test('[walk] should return files from directory, recursively', t => {
 
   t.end();
 });
+
+test('[walk] should return full file paths', t => {
+  const files = walk(path.resolve(__dirname, '../.github'));
+
+  t.true(files[0].includes(path.resolve(__dirname, '../', '.github', 'workflows', 'ci.yml')));
+
+  t.end();
+});
