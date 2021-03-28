@@ -42,7 +42,7 @@ const files = walk(path.resolve(__dirname)); // Return all absolute file paths i
 
 ## Sync / Async
 
-`@chronocide/fs-walk` uses an interative, synchronous approach to scanning directories. Speed and memory wise, the performance is [roughly](https://www.quora.com/Is-recursion-faster-than-loops) [the](https://stackoverflow.com/questions/15688019/recursion-versus-iteration) [same](https://github.com/chronoDave/fs-walk/issues/1). Code should be simple and easy to use, so an iterative approach works better for this scenario.
+`@chronocide/fs-walk` uses an interative, synchronous approach to scanning directories. Speed and memory wise, the performance is [roughly](https://www.quora.com/Is-recursion-faster-than-loops) [the](https://stackoverflow.com/questions/15688019/recursion-versus-iteration) [same](https://github.com/chronoDave/fs-walk/issues/1) compared to an asyc recursive approach. Code should be simple and easy to use, so an iterative approach works better for this scenario.
 
 ## Donating
 
