@@ -6,6 +6,8 @@ jobs:
   ci:
     name: Lint & Test
     runs-on: ubuntu-latest
+    env:
+      WEBHOOK_FOOTER: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
