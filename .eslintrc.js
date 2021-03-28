@@ -15,9 +15,12 @@ module.exports = {
     'arrow-body-style': 'warn',
     'arrow-parens': ['error', 'as-needed'],
     'no-nested-ternary': 'off',
+    'no-await-in-loop': 'off',
     'object-curly-newline': ['warn', {
       ObjectPattern: { minProperties: 4 },
       ImportDeclaration: { minProperties: 4 }
-    }]
+    }],
+    // Import
+    'import/prefer-default-export': 'off'
   }
 };

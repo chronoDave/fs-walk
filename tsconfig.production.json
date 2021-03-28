@@ -1,7 +1,4 @@
 {
   "extends": "./tsconfig",
-  "exclude": [
-    "src/walk.bench.ts",
-    "src/walk.test.ts"
-  ]
+  "exclude": ["test"]
 }

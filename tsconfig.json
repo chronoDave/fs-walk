@@ -1,23 +1,24 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["es2015"],
+    "lib": ["es2019"],
     "strict": true,
     "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "downlevelIteration": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "declaration": true,
     "outDir": "./dist"
   },
+  "compileOnSave": true,
   "include": [
-    "src",
+    "index.ts",
+    "test",
     ".eslintrc.js"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "**/*.d.ts"
   ]
 }
