@@ -5,8 +5,8 @@
     <img alt="npm" src="https://img.shields.io/npm/v/@chronocide/fs-walk?label=npm">
   </a>
   <a href="https://github.com/chronoDave/fs-walk/actions/workflows/ci.yml">
-    <img alt="CI" src="https://github.com/chronoDave/fs-walk/workflows/@chronocide/fs-walk/badge.svg?branch=main">
-  </a>
+    <img alt="CI" src="https://github.com/chronoDave/fs-walk/actions/workflows/ci.yml/badge.svg">
+  </a> 
   <a href="https://bundlephobia.com/result?p=@chronocide/fs-walk@latest">
     <img alt="size" src="https://img.shields.io/bundlephobia/minzip/@chronocide/fs-walk@latest.svg">
   </a>
