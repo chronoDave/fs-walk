@@ -16,7 +16,7 @@
 
 # Features
 
- - **Zero depedency**, only **552 B** minzipped.
+ - **Zero depedency**, only **589 B** minzipped.
  - **Modern**, written in TypeScript using the newest node features (`10.12+`)
  - **Fast**, `0.015 ms / file` on a _Samsung SSD 850 EVO_
 
