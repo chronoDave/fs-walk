@@ -23,8 +23,8 @@
   },
   "scripts": {
     "lint": "eslint . --ignore-pattern dist",
-    "bench": "tsc --project tsconfig.production.json && ts-node test/bench.ts",
-    "test": "tsc --project tsconfig.production.json && ts-node test/test.ts",
+    "bench": "ts-node test/bench.ts",
+    "test": "ts-node test/test.ts",
     "prepare": "tsc --project tsconfig.production.json"
   },
   "devDependencies": {
