@@ -15,10 +15,5 @@
     "index.ts",
     "test",
     ".eslintrc.js"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.d.ts"
   ]
 }
