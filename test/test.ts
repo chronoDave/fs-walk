@@ -14,7 +14,7 @@ test('[walk] should return files from directory', t => {
 test('[walk] should return files from directory, recursively', t => {
   const files = walk(path.resolve(__dirname, '../.github'));
 
-  t.equal(files.length, 2);
+  t.equal(files.length, 1);
 
   t.end();
 });
