@@ -29,4 +29,4 @@ export default [{
     format: 'es'
   },
   external: ['fs', 'path']
-}]
+}];
