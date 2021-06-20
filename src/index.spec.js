@@ -1,12 +1,12 @@
-import path from 'path';
-import test from 'tape';
+const path = require('path');
+const test = require('tape');
 
-import walk from '..';
+const walk = require('..');
 
 test('[walk] should return files from directory', t => {
   const files = walk(__dirname);
 
-  t.equal(files.length, 2);
+  t.equal(files.length, 3);
 
   t.end();
 });

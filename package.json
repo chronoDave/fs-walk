@@ -2,8 +2,15 @@
   "name": "@chronocide/fs-walk",
   "version": "1.2.2",
   "description": "A fast and tiny zero-depedency directory walker for node.js",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/fs-walk.cjs",
+  "module": "dist/fs-walk.mjs",
+  "types": "dist/fs-walk.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/fs-walk.mjs",
+      "require": "./dist/fs-walk.cjs"
+    }
+  },
   "keywords": [
     "walk",
     "fs",
@@ -23,20 +30,23 @@
   },
   "scripts": {
     "lint": "eslint . --ignore-pattern dist",
-    "bench": "ts-node test/bench.ts",
-    "test": "ts-node test/test.ts",
-    "prepareOnly": "tsc --project tsconfig.production.json"
+    "bench": "node src/index.bench.js",
+    "test": "tape src/index.spec.js",
+    "build": "rollup -c"
   },
   "devDependencies": {
     "@types/node": "^14.14.14",
     "@types/tape": "^4.13.0",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
+    "esbuild": "^0.12.9",
     "eslint": "^7.15.0",
     "eslint-config-airbnb-typescript": "^12.0.0",
     "eslint-plugin-import": "^2.22.1",
+    "rollup": "^2.52.1",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-esbuild": "^4.5.0",
     "tape": "^5.0.1",
-    "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
 }

@@ -1,9 +1,9 @@
-import { performance } from 'perf_hooks';
-import path from 'path';
+const { performance } = require('perf_hooks');
+const path = require('path');
 
-import walk from '..';
+const walk = require('..');
 
-const getAvg = (times: { ts: number, te: number }[], n: number) => times
+const getAvg = (times, n) => times
   .reduce((acc, { ts, te }) => acc + (te - ts), 0) / n;
 
 const formatResult = ({
@@ -11,11 +11,6 @@ const formatResult = ({
   avg,
   n,
   size
-}: {
-  type: string,
-  avg: number,
-  n: number,
-  size: number
 }) => [
   `type: ${type}`,
   `avg: ${avg.toFixed(3)} ms (${n} runs)`,
@@ -23,7 +18,7 @@ const formatResult = ({
   `speed: ${(avg / size).toFixed(3)} ms / file`
 ].join('\n');
 
-const runSync = (root: string, n: number) => {
+const runSync = (root, n) => {
   const times = [];
 
   let files = [];

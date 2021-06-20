@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["es2019"],
+    "lib": ["esnext"],
     "strict": true,
     "noImplicitAny": true,
     "downlevelIteration": true,
@@ -12,8 +12,8 @@
   },
   "compileOnSave": true,
   "include": [
-    "index.ts",
-    "test",
-    ".eslintrc.js"
+    "src",
+    ".eslintrc.js",
+    "rollup.config.js"
   ]
 }
