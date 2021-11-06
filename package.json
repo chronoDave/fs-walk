@@ -29,7 +29,7 @@
     "node": ">=10.12.0"
   },
   "scripts": {
-    "lint": "eslint . --ignore-pattern dist",
+    "lint": "eslint src/index.ts",
     "bench": "node src/index.bench.js",
     "test": "tape src/index.spec.js",
     "build": "rollup -c"
