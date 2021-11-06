@@ -30,8 +30,8 @@
   },
   "scripts": {
     "lint": "eslint src/index.ts",
-    "bench": "node src/index.bench.js",
-    "test": "tape src/index.spec.js",
+    "bench": "npm run build && node src/index.bench.js",
+    "test": "npm run build && tape src/index.spec.js",
     "build": "rollup -c"
   },
   "devDependencies": {
