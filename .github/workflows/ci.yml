@@ -1,4 +1,4 @@
-name: 'ci'
+name: ci
 on: [push, pull_request]
 jobs:
   ci:
@@ -16,7 +16,7 @@ jobs:
           key: node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: node-
       - name: Install packages
-        run: npm i
+        run: npm ci
       - name: Lint
         run: npm run lint
       - name: Test
